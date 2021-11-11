@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="F:/some_test_selenium">
-        <classes>
-            <class name = "selenium_testng" />
-        </classes>
+
+
+
+    <test name="selenium3">
+     <classes>
+         <class name="sum_smoke_tests.selenium_testng_search"></class>
+     </classes>
     </test>
+
+
+
 </suite>
