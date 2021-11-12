@@ -6,7 +6,7 @@
 
     <test name="selenium3">
      <classes>
-         <class name="sum_smoke_tests.selenium_testng_search"></class>
+         <class name="Loggers.MainLog"></class>
      </classes>
     </test>
 

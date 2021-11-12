@@ -4,11 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
 public class selenium_testng_search {
 
-
+    private static final Logger logger = LoggerFactory.getLogger(selenium_testng2.class);
 
 
     public WebDriver driver;
@@ -36,7 +38,8 @@ public class selenium_testng_search {
     public void Test11()
 
     {
-        System.out.println("Hello it's a number 2 test");
+        logger.info("TEST");
+       // System.out.println("Hello it's a number 2 test");
     }
 }
 
