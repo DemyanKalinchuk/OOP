@@ -5,9 +5,9 @@
 
 
     <test name="selenium3">
-     <classes>
-         <class name="Loggers.MainLog"></class>
-     </classes>
+     <packages>
+         <package name="Interfaces.Horse"></package>
+     </packages>
     </test>
 
 
