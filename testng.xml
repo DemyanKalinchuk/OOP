@@ -6,7 +6,7 @@
 
     <test name="selenium3">
      <packages>
-         <package name="Interfaces.Horse"></package>
+         <package name="Interfaces.moto"></package>
      </packages>
     </test>
 
