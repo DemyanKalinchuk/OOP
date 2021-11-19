@@ -1,12 +1,13 @@
 package SempleTests;
 
+import javafx.scene.control.Tab;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import org.openqa.selenium.devtools.v85.io.IO;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,6 +16,7 @@ import sum_smoke_tests.selenium_testng2;
 
 public class SempleTest {
     private WebDriver webDriver;
+
 
     @BeforeMethod
 public void setUp(){
@@ -29,8 +31,8 @@ public void setUp(){
 
     public void cleanUp(){
     System.out.println("Close Browser");
-      //  if(webDriver != null)
-        //    webDriver.quit();
+       if(webDriver != null)
+           webDriver.quit();
     }
 
 
@@ -44,25 +46,28 @@ public void setUp(){
 
     }
 @Test
-    public void Test2_register(){
+    public void Test2_autorazation(){
 
-    WebDriverWait wait = new WebDriverWait(webDriver, 10);
 
     System.out.println("Click on register button");
     webDriver.findElement(By.xpath("//rz-user/button")).click();
-
     System.out.println("Enter email");
-    webDriver.findElement(By.id("auth_email")).sendKeys("demonation20@gmail.com");
-
+   webDriver.findElement(By.id("auth_email")).sendKeys("demonation20@gmail.com");
     System.out.println("Enter pass");
     webDriver.findElement(By.id("auth_pass")).sendKeys("QWASZXerdfcv12345");
-
     System.out.println("Click autorization");
     webDriver.findElement(By.xpath("//button[@class='button button--large button--green auth-modal__submit ng-star-inserted']")).click();
 
 
 }
+@Test
+   public void Test3_registration(){
+    System.out.println("Click on autorization button");
+    webDriver.findElement(By.xpath("//rz-user/button")).click();
+    System.out.println("Click on register button");
+    webDriver.findElement(By.xpath("//button[@class='auth-modal__register-link button button--link ng-star-inserted']")).click();
 
+}
 
 
 }
