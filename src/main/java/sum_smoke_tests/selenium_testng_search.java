@@ -38,8 +38,8 @@ public class selenium_testng_search {
     public void Test11()
 
     {
-        logger.info("TEST");
-       // System.out.println("Hello it's a number 2 test");
+        logger.warn("TEST");
+       System.out.println("Hello it's a number 2 test");
     }
 }
 
